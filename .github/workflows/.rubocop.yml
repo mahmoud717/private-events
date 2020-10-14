@@ -1,0 +1,103 @@
+Skip to content
+Search or jump to…
+
+Pulls
+Issues
+Marketplace
+Explore
+ 
+@mahmoud717 
+microverseinc
+/
+linters-config
+8
+72261
+Code
+Issues
+1
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+linters-config/ror/.rubocop.yml
+@MauricioRobayo
+MauricioRobayo Add GHA for RoR
+Latest commit afeae7c on May 23
+ History
+ 4 contributors
+@nidalaa@shloch@MauricioRobayo@Dandush03
+59 lines (55 sloc)  1.07 KB
+  
+AllCops:
+  Exclude:
+    - "db/**/*"
+    - "bin/*" 
+    - "config/**/*"
+    - "Guardfile"
+    - "Rakefile"
+    - "node_modules/**/*"
+
+  DisplayCopNames: true
+
+Layout/LineLength:
+  Max: 120
+Metrics/MethodLength:
+  Include:
+    - "app/controllers/*"
+    - "app/models/*"
+  Max: 20
+Metrics/AbcSize:
+  Include:
+    - "app/controllers/*"
+    - "app/models/*"
+  Max: 50
+Metrics/ClassLength:
+  Max: 150
+Metrics/BlockLength:
+  ExcludedMethods: ['describe']
+  Max: 30
+
+Style/Documentation:
+  Enabled: false
+Style/ClassAndModuleChildren:
+  Enabled: false
+Style/EachForSimpleLoop:
+  Enabled: false
+Style/AndOr:
+  Enabled: false
+Style/DefWithParentheses:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  EnforcedStyle: never
+
+Layout/HashAlignment:
+  EnforcedColonStyle: key
+Layout/ExtraSpacing:
+  AllowForAlignment: false
+Layout/MultilineMethodCallIndentation:
+  Enabled: true
+  EnforcedStyle: indented
+Lint/RaiseException:
+  Enabled: false
+Lint/StructNewOverride:
+  Enabled: false
+Style/HashEachMethods:
+  Enabled: false
+Style/HashTransformKeys:
+  Enabled: false
+Style/HashTransformValues:
+  Enabled: false
+© 2020 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
